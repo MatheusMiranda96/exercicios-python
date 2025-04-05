@@ -5,4 +5,4 @@ n1 = int(input("Digite N1: "))
 n2 = int(input("Digite N2: "))
 soma = n1 + n2
 
-print("A soma dos valores é: ", soma)
+print(f"A soma dos valores é: {soma}")
