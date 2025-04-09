@@ -3,24 +3,21 @@
 
 
 #Utilizando módulo
-from math import sqrt
+from math import hypot
 
 cop = float(input("Comprimento do cateto oposto: "))
 cadj = float(input("Comprimento do cateto adjacente: "))
 
-s = (cop ** 2) + (cadj ** 2)
-hipo = sqrt(s)
+hipo = hypot(cop, cadj)
 
 print(f"A medida da hipotenusa é: {hipo}")
 
-'''
 # Mesma resolução sem a utilização de módulo
-
+'''
 cop = float(input("Comprimento do cateto oposto: "))
 cadj = float (input("Comprimento do cateto adjacente: "))
 
-s = (cop ** 2) + (cadj ** 2)
-hipo = s ** (1/2)
+hipo = (cop ** 2 + cadj ** 2) ** (1/2)
 
 print(f"A medida da hipotenusa é: {hipo}")
 '''
